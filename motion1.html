@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- El elemento raíz de la página, con idioma español -->
+<html lang="es">
+<head>
+    <!-- Contenedor para metadatos (información no visible) -->
+    <meta charset="UTF-8">
+    <!-- Configuración para la visualización en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página, que aparece en la pestaña del navegador -->
+    <title>Mi página completa y con estilo</title>
+    <!-- Sección para los estilos CSS -->
+    <style>
+        /* Estilos básicos para la estructura */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0; /* Fondo general gris claro */
+        }
+        header {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333; /* Fondo oscuro para el encabezado */
+            color: white;
+        }
+        header h1 {
+            margin: 0; /* Elimina el margen por defecto del h1 */
+        }
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        aside {
+            width: 30%;
+            padding: 15px;
+            background-color: #e6e6e6; /* Fondo gris un poco más oscuro para la barra lateral */
+            border-left: 2px solid #ccc;
+        }
+        section {
+            flex-grow: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        /* Estilos para el menú */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Título principal de la página. Se recomienda usar solo un <h1> por página. -->
+        <h1>Mi Blog Personal</h1>
+        <!-- Contenedor para el menú de navegación -->
+        <nav>
+            <ul>
+                <!-- Lista desordenada para los elementos del menú -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal y central de la página -->
+    <main>
+        <!-- Sección temática para artículos recientes -->
+        <section>
+            <h2>Artículos recientes</h2>
+            
+            <!-- Contenido independiente y autónomo: un artículo de blog -->
+            <article>
+                <!-- Encabezado del artículo -->
+                <header>
+                    <!-- Agrupa títulos y subtítulos del artículo -->
+                    <hgroup>
+                        <h1>Primer post del blog</h1>
+                        <h2>Una introducción al HTML semántico</h2>
+                    </hgroup>
+                    <p>Publicado por Juan Pérez el 25 de septiembre de 2025</p>
+                </header>
+                <p>Este es el contenido de mi primer artículo. Aquí hablo sobre la importancia de usar las etiquetas correctas para estructurar una página web.</p>
+                <!-- Pie de página del artículo -->
+                <footer>
+                    <p>Etiquetas: HTML, web, semántica</p>
+                </footer>
+            </article>
+
+            <!-- Otro artículo del blog -->
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>Cómo usar CSS para estilizar</h1>
+                        <h2>Dando vida a tus páginas web</h2>
+                    </hgroup>
+                    <p>Publicado por Ana García el 20 de septiembre de 2025</p>
+                </header>
+                <p>En este artículo, exploramos las bases de CSS y cómo puedes utilizarlo para mejorar el diseño de tu sitio.</p>
+                <footer>
+                    <p>Etiquetas: CSS, diseño web, tutorial</p>
+                </footer>
+            </article>
+
+        </section>
+
+        <!-- Barra lateral (aside), contenido relacionado pero no central -->
+        <aside>
+            <h3>Enlaces relacionados</h3>
+            <ul>
+                <li><a href="#">Lo más popular del mes</a></li>
+                <li><a href="#">Tutoriales para principiantes</a></li>
+                <li><a href="#">Recursos de CSS</a></li>
+            </ul>
+            <h3>Sobre el autor</h3>
+            <p>Juan Pérez es un entusiasta del desarrollo web que disfruta compartiendo sus conocimientos con la comunidad.</p>
+        </aside>
+    </main>
+
+    <!-- Pie de página global del sitio web -->
+    <footer>
+        <p>&copy; 2025 Mi Blog Personal. Todos los derechos reservados.</p>
+        <p><a href="politica-privacidad.html">Política de Privacidad</a></p>
+    </footer>
+
+</body>
+</html>
